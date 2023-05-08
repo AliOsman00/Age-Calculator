@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-down.css' rel='stylesheet'>
+    <link rel="icon" href="./assets/images/logo.png">
+    <script src="./assets/JavaScript/app.js" defer></script>
+    <title>Age Calculator</title>
+</head>
+    <body>
+        <div id="shell-calculator">
+            <div class="section-calculator">
+                <form action="">
+                    <div class="inputs-dmy">
+                        <div class="input-dd">
+                            <p>Day</p>
+                            <input id="day" type="number" placeholder="DD">
+                            <small></small>
+                        </div>
+                        <div class="input-mm">
+                            <p>Month</p>
+                            <input id="month" type="number" placeholder="MM">
+                            <small></small>
+                        </div>
+                        <div class="input-yyyy">
+                            <p>Year</p>
+                            <input id="year" type="number" placeholder="YYYY">
+                            <small></small>
+                        </div>
+                    </div>
+                    <div class="separator-button">
+                        <div class="separator">
+                            <hr>
+                        </div>
+                        <button type="submit" class="calculate" value="calculate"><img src="./assets/images/icon-arrow.svg" alt="calculate"></button>
+                    </div>
+                </form>
+                <div class="calculated">
+                    <div class="calculated-item"><p id="YY">-- </p><span>years</span></div>
+                    <div class="calculated-item"><p id="MM">-- </p><span>months</span></div>
+                    <div class="calculated-item"><p id="DD">-- </p><span>days</span></div>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>

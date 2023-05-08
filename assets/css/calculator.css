@@ -1,0 +1,142 @@
+/* STYLE AGE CALCULATOR */
+/* Body sytle */
+body {
+    background-color: #ccc;
+    font-family: "poppins";
+    font-weight: 600;
+}
+
+#shell-calculator {
+    position:absolute;
+    margin: 0 auto;
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-calculator {
+    background-color: #fff;
+    width: 850px;
+    min-height: 670px;
+    border-radius: 20px;
+    border-bottom-right-radius: 167px;
+}
+
+/* Inputs */
+
+.inputs-dmy {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 30px;
+    padding: auto 20px auto 20px;
+}
+
+[class|="input"] {
+    display: flex;
+    flex-direction: column;
+    margin: auto 20px;
+}
+
+[class|="input"] > p {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgb(128, 128, 128);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+[class|="input"] > input {
+    width: 140px;
+    height: 63px;
+    border: solid black 1px;
+    border-radius: 8px;
+    padding-left: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(128, 128, 128);
+}
+
+/* Button */
+
+.separator-button {
+    display: flex;
+    max-width: 100%;
+    margin: 40px 0 auto 50px;
+    align-items: center;
+}
+
+.separator {
+    width: 70%;
+}
+
+.separator-button > button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #864cff;
+    border: none
+}
+
+.separator-button > button:hover {
+    cursor: pointer;
+}
+
+/* Calculated age */
+
+.calculated {
+    margin: 30px auto auto 50px;
+    font-size: 108px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.calculated-item {
+    display: flex;
+}
+
+.calculated-item > p {
+    color: #864cff;
+    letter-spacing: 12px;
+}
+
+/* Responsive desing */
+
+@media only screen and (max-width: 650px) {
+    /* Inputs */
+    .inputs-dmy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    [class|="input"] > input {
+        width: 100%;
+    }
+
+    [class|="input"] > p {
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+
+    /* Button and line */
+    
+    .separator-button {
+        justify-content: center;
+    }
+
+    /* Calculated age */
+
+    .calculated {
+        font-size: 58px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
